@@ -8,7 +8,7 @@ public class AppTest : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.A))
         {
-            print("µûÀÕ");
+            print("youtube");
             Application.OpenURL("https://www.youtube.com/");
         }
     }
