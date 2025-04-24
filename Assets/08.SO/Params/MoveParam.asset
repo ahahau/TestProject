@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8179648d7204fc88ab742048875a193, type: 3}
-  m_Name: Is Move Param
+  m_Name: MoveParam
   m_EditorClassIdentifier: 
-  paramName: IsMove
-  hashValue: 1236215618
+  paramName: MOVE
+  hashValue: -643048756

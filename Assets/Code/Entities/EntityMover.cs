@@ -4,45 +4,47 @@ using UnityEngine;
 
 namespace Code.Entities
 {
-    public class EntityMover : MonoBehaviour
+    public class EntityMover : MonoBehaviour, IEntityComponent
     {
         [Header("Player data")] 
         [SerializeField] private float moveSpeed = 5f;
-        [SerializeField] private float jumpPower = 4f;
+        
 
         [Header("Ground check")] 
         [SerializeField] private Transform groundTrm;
         [SerializeField] private LayerMask whatIsGround;
         [SerializeField] private Vector2 groundCheckSize;
 
-        [SerializeField] private AnimParamSO moveParan;
         
-        private PlayerController _player;
         private Rigidbody2D _rbCompo;
-
-        private int _jumpCount = 2; //더블점프 만들어보세요.
-        
+        private Entity _entity;
+        private EntityRenderer _renderer;
+        private float _movementX;
         public bool IsGrounded { get; private set; }
-        
-        public void Initialize(PlayerController player)
+        public event Action<bool> OnGroundStatusChange;
+
+        public void Initialize(Entity entity)
         {
-            _player = player;
-            _rbCompo = player.GetComponent<Rigidbody2D>();
-            _player.PlayerInput.OnJumpPress += HandleJumpPress;
+            _entity = entity;
+            _renderer = entity.GetCompo<EntityRenderer>();
+            _rbCompo = entity.GetComponent<Rigidbody2D>();
+        }
+
+        public void AddForceToEntity(Vector2 force)
+        {
+            _rbCompo.AddForce(force, ForceMode2D.Impulse);
+        }
+
+        public void StopImmediately(bool isYAxis = false)
+        {
+            if (isYAxis)
+                _rbCompo.linearVelocity = Vector2.zero;
+            else
+                _rbCompo.linearVelocityX = 0;
+            _movementX = 0;
         }
         
-        private void OnDestroy()
-        {
-            _player.PlayerInput.OnJumpPress -= HandleJumpPress;
-        }
-        
-        private void HandleJumpPress()
-        {
-            if (IsGrounded == false && _jumpCount <= 0) return; //1번
-            
-            --_jumpCount;
-            _rbCompo.AddForce(Vector2.up * jumpPower, ForceMode2D.Impulse);
-        }
+        public void SetMovementX(float movementX) => _movementX = movementX;
         
         private void FixedUpdate()
         {
@@ -54,16 +56,14 @@ namespace Code.Entities
         {
             bool before = IsGrounded;
             IsGrounded = Physics2D.OverlapBox(groundTrm.position, groundCheckSize, 0, whatIsGround);
-            if (IsGrounded && before == false)
-                _jumpCount = 2;
+            if (IsGrounded != before)
+                OnGroundStatusChange?.Invoke(IsGrounded);
         }
 
         private void MoveCharacter()
         {
-            float xMove = _player.PlayerInput.InputDirection.x;
-            _rbCompo.linearVelocityX = xMove * moveSpeed;
-            _player.Renderer.FlipController(xMove);
-            _player.Renderer.SetParam(moveParan, Mathf.Abs(xMove) > 0);
+            _renderer.FlipController(_movementX);
+            _rbCompo.linearVelocityX = _movementX * moveSpeed;
         }
         
         private void OnDrawGizmos()
@@ -72,5 +72,7 @@ namespace Code.Entities
             Gizmos.color = Color.red;
             Gizmos.DrawWireCube(groundTrm.position, groundCheckSize);
         }
+
+        
     }
 }

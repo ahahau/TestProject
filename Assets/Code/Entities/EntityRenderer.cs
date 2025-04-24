@@ -4,19 +4,18 @@ using UnityEngine;
 
 namespace Code.Entities
 {
-    public class EntityRenderer : MonoBehaviour
+    public class EntityRenderer : MonoBehaviour, IEntityComponent
     {
         public float FacingDirection { get; private set; } = 1f;
 
         [SerializeField] private Animator animator;
         
-        private PlayerController _player;
+        private Entity _entity;
         
-        public void Initialize(PlayerController player)
+        public void Initialize(Entity entity)
         {
-            _player = player;
+            _entity = entity;
         }
-
         public void SetParam(AnimParamSO param, bool value) => animator.SetBool(param.hashValue, value);
         public void SetParam(AnimParamSO param, float value) => animator.SetFloat(param.hashValue, value);
         public void SetParam(AnimParamSO param, int value) => animator.SetInteger(param.hashValue, value);
@@ -27,7 +26,7 @@ namespace Code.Entities
         public void Flip()
         {
             FacingDirection *= -1;
-            transform.Rotate(0, 180f, 0);
+            _entity.transform.Rotate(0, 180f, 0);
         }
 
         public void FlipController(float xMove)
@@ -37,5 +36,7 @@ namespace Code.Entities
         }
 
         #endregion
+
+        
     }
 }
