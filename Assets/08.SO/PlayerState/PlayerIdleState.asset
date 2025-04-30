@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5f1abf29be746c6a27369a87a9baf3d, type: 3}
   m_Name: PlayerIdleState
   m_EditorClassIdentifier: 
-  stateName: 
+  stateName: IDLE
   className: Code.Player.FSM.PlayerIdleState
-  animParam: {fileID: 0}
+  animParam: {fileID: 11400000, guid: 91bdced1cf5187a43869028c26914564, type: 2}

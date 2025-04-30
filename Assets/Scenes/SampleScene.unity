@@ -2912,6 +2912,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   <PlayerInput>k__BackingField: {fileID: 11400000, guid: 5609cd68b431bd74abde5728c683d13f, type: 2}
+  jumpPower: 4
+  jumpCount: 2
+  stateList:
+  - {fileID: 11400000, guid: ea18d052367903d468f2ffceb18a6e1e, type: 2}
+  - {fileID: 11400000, guid: 62497695a6b9eca43b46469f2f140998, type: 2}
+  - {fileID: 11400000, guid: ee685e0bc7ededa4faac089b0d0c698c, type: 2}
+  - {fileID: 11400000, guid: deb910033c4ee5442a9bd117f6ab5e9f, type: 2}
 --- !u!1 &1257562455
 GameObject:
   m_ObjectHideFlags: 0
@@ -3306,13 +3313,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  jumpPower: 12
+  ySpeedParam: {fileID: 11400000, guid: 3a448e54684ff564dbd5941edbd1ff65, type: 2}
   groundTrm: {fileID: 1257562456}
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
   groundCheckSize: {x: 0.49, y: 0.09}
-  moveParan: {fileID: 11400000, guid: de5acdb576e12d64c8566394fc0237c3, type: 2}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

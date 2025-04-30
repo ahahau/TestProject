@@ -10,8 +10,8 @@ namespace Code.Player
     {
         [field: SerializeField] public PlayerInputSO PlayerInput { get; private set; }
 
-        [SerializeField] private float jumpPower = 4f;
-        [SerializeField] private int jumpCount = 2;
+        public float jumpPower = 4f;
+        [SerializeField] public int jumpCount = 2;
         [SerializeField] private StateSO[] stateList;
         
         private int _currentJumpCount = 0;
@@ -65,8 +65,7 @@ namespace Code.Player
         {
             if (_mover.IsGrounded || _currentJumpCount > 0)
             {
-                _mover.StopImmediately(true);
-                _mover.AddForceToEntity(new Vector2(0, jumpPower));
+                ChangeState("JUMP");
                 _currentJumpCount--;
             }
         }

@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c5f1abf29be746c6a27369a87a9baf3d, type: 3}
-  m_Name: PlayerMoveState
+  m_Name: PlayerJumpState
   m_EditorClassIdentifier: 
-  stateName: MOVE
-  className: Code.Player.FSM.PlayerMoveState
-  animParam: {fileID: 11400000, guid: de5acdb576e12d64c8566394fc0237c3, type: 2}
+  stateName: JUMP
+  className: Code.Player.FSM.PlayerJumpState
+  animParam: {fileID: 11400000, guid: 1efc5ca9a5441dd448700d4d42d7897d, type: 2}

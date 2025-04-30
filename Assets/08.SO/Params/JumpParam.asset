@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c5f1abf29be746c6a27369a87a9baf3d, type: 3}
-  m_Name: PlayerMoveState
+  m_Script: {fileID: 11500000, guid: d8179648d7204fc88ab742048875a193, type: 3}
+  m_Name: JumpParam
   m_EditorClassIdentifier: 
-  stateName: MOVE
-  className: Code.Player.FSM.PlayerMoveState
-  animParam: {fileID: 11400000, guid: de5acdb576e12d64c8566394fc0237c3, type: 2}
+  paramName: JUMP
+  hashValue: -1859720286
