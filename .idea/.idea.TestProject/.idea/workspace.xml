@@ -5,17 +5,254 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="330c31e3-1ef9-4201-9249-3dc63c5cc187" name="변경" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/EnemySkeleton.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/EnemySkeleton.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Entity.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/Entity.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/IEntityComponent.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Enemy/IEntityComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestProject/.idea/indexLayout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestProject/.idea/projectSettingsUpdater.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestProject/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.TestProject/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.TestProject/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/BT.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/BT/Events.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/BT/Events/StateChange.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/BT/Events/StateChange.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Enemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemySkeleton.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemySkeleton.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyState.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/EnemyState.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Entity.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/Entity.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/IEntityComponent.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/IEntityComponent.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/NavMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Enemy/NavMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/InputSystem_Actions.inputactions.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Plane.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/NavMesh-Plane.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Folder.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Demigiant/DOTween/Editor.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SO.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SO/EnemyBT.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SO/EnemyBT.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Scene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/New Scene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/sss.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/sss.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/DefaultVolumeProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/PC_RPAsset.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/SampleSceneProfile.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/Demo Lightmap Parameters.giparams" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/Demo Lightmap Parameters.giparams.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/GI Blocker.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/GI Blocker.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/Neon Light.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Demo/Prototype Materials Demo/Neon Light.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Blue3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Brown.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Brown.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Cyan.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Cyan.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Green3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Grey4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Magenta.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Magenta.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Olive.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Olive.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Orange.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Orange.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Pink.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Pink.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Purple.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Purple.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_White.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Yellow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/Standard/Prototype_512x512_Yellow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Blue1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Blue1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Blue2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Blue2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Blue3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Blue3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Brown.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Brown.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Cyan.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Cyan.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Green3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Grey4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Magenta.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Magenta.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Olive.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Olive.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Orange.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Orange.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Pink.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Pink.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Purple.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Purple.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Red.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Red.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_White.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_White.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Yellow.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Materials/URP/Prototype_512x512_Yellow.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Template.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Template/prototype_texture_512x512.psd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Template/prototype_texture_512x512.psd.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_blue1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_blue1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_blue2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_blue2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_blue3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_blue3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_brown.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_brown.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_cyan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_cyan.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_green1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_green1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_green2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_green2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_green3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_green3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_grey1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_grey1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_grey2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_grey2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_grey3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_grey3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_grey4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_grey4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_magenta.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_magenta.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_normal.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_normal.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_olive.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_olive.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_orange.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_orange.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_pink.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_purple.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_purple.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_red.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_white.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Thirdparty/Ciathyza/Gridbox Prototype Materials/Textures/prototype_512x512_yellow.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Dungeons_Material_Characters_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Dungeons_Material_Characters_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Dungeons_Material_Characters_01.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Dungeons_Material_Characters_01.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Misc.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Misc.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Misc/Dungeons_Texture_Ghost.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Misc/Dungeons_Texture_Ghost.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Misc/Dungeons_Texture_Ghost.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Materials/Misc/Dungeons_Texture_Ghost.mat.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Models.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Models.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Models/Characters.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Models/Characters.fbx.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Prefabs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Prefabs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Prefabs/Characters.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Prefabs/Characters.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Prefabs/Characters/Character_Ghost_01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Prefabs/Characters/Character_Ghost_01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Prefabs/Characters/Character_Ghost_01.prefab.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_Graphics/PolygonDungeon/Prefabs/Characters/Character_Ghost_01.prefab.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/Read me.pdf.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/Read me.pdf.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchy.asmdef" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchy.asmdef" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchy.asmdef.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchy.asmdef.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchy.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchy.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyCache.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyCache.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyCache.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyCache.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyComponentEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyComponentEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyComponentEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyComponentEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyComponentWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyComponentWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyComponentWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyComponentWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyController.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyController.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyData.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyData.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyData.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyData.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyDataComponent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyDataComponent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyDataComponent.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyDataComponent.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyGUI.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyGUI.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyGUI.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyGUI.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyIconEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyIconEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyIconEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyIconEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyLibs.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyLibs.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyLibs.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyLibs.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyLightingWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyLightingWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyLightingWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyLightingWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyMenu.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyMenuItems.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyMenuItems.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyMenuItems.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyMenuItems.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyNavbar.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyNavbar.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyNavbar.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyNavbar.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPalette.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPalette.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPalette.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPalette.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPaletteEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPaletteEditor.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPaletteEditor.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPaletteEditor.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPaletteWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPaletteWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPaletteWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchyPaletteWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchySceneSelectorWindow.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchySceneSelectorWindow.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchySceneSelectorWindow.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/VHierarchySceneSelectorWindow.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/vHierarchy/vHierarchy Data.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/vHierarchy/vHierarchy Data.asset.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/BehaviorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/BehaviorSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/SceneTemplateSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +263,8 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy/BT/Action/ChangeClipAction.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Enemy/BT/Action/PatrolAction.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Enemy/EnemyState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.behavior@fe41d2b9d6fa/Runtime/Execution/Nodes/Composites/SelectorComposite.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -44,20 +283,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "2-1-2-Performance-Evaluation",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;2-1-2-Performance-Evaluation&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\6000.0.44f1\Editor\Unity.exe" />
@@ -113,6 +352,7 @@
       <workItem from="1745453961612" duration="6045000" />
       <workItem from="1745481836578" duration="8317000" />
       <workItem from="1745934544588" duration="3482000" />
+      <workItem from="1746022018778" duration="5113000" />
     </task>
     <servers />
   </component>
