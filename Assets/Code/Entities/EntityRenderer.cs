@@ -16,10 +16,16 @@ namespace Code.Entities
         {
             _entity = entity;
         }
+        
         public void SetParam(AnimParamSO param, bool value) => animator.SetBool(param.hashValue, value);
         public void SetParam(AnimParamSO param, float value) => animator.SetFloat(param.hashValue, value);
         public void SetParam(AnimParamSO param, int value) => animator.SetInteger(param.hashValue, value);
         public void SetParam(AnimParamSO param) => animator.SetTrigger(param.hashValue);
+        
+        public void SetParam(int param, bool value) => animator.SetBool(param, value);
+        public void SetParam(int param, float value) => animator.SetFloat(param, value);
+        public void SetParam(int param, int value) => animator.SetInteger(param, value);
+        public void SetParam(int param) => animator.SetTrigger(param);
 
         #region FlipController
 

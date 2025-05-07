@@ -9,25 +9,28 @@ namespace Code.Entities
         [Header("Player data")] 
         [SerializeField] private float moveSpeed = 5f;
         [SerializeField] private AnimParamSO ySpeedParam;
+        [SerializeField] private AnimParamSO onGroundParam;
 
         [Header("Ground check")] 
         [SerializeField] private Transform groundTrm;
         [SerializeField] private LayerMask whatIsGround;
         [SerializeField] private Vector2 groundCheckSize;
-
         
         private Rigidbody2D _rbCompo;
         private Entity _entity;
         private EntityRenderer _renderer;
         private float _movementX;
-        
+
         private float _moveSpeedMultiplier;
         private float _originalGravityScale;
-        
-        public bool IsGrounded { get; private set; }
-        public event Action<bool> OnGroundStatusChange;
-        public event Action<Vector2> OnMoveVelocityChange;
 
+        [field:SerializeField] public bool IsGrounded { get; private set; }
+        public event Action<bool> OnGroundStatusChange; //그라운드 상태가 변경될 때마다 발행해준다.
+        public event Action<Vector2> OnMoveVelocityChange; //이동속도 변경시마다 발행
+
+        public bool CanManualMove { get; set; } = true;
+        public Vector2 Velocity => _rbCompo.linearVelocity;
+        
         public void Initialize(Entity entity)
         {
             _entity = entity;
@@ -36,8 +39,10 @@ namespace Code.Entities
             _originalGravityScale = _rbCompo.gravityScale;
             _moveSpeedMultiplier = 1f;
         }
+        
         public void SetMoveSpeedMultiplier(float value) => _moveSpeedMultiplier = value;
-        public void SetGravityScale(float value) => _originalGravityScale = _rbCompo.gravityScale;
+        public void SetGravityScale(float value) => _rbCompo.gravityScale = _originalGravityScale * value;
+
         public void AddForceToEntity(Vector2 force)
         {
             _rbCompo.AddForce(force, ForceMode2D.Impulse);
@@ -51,8 +56,11 @@ namespace Code.Entities
                 _rbCompo.linearVelocityX = 0;
             _movementX = 0;
         }
+
+        public void StopFalling() => _rbCompo.linearVelocityY = 0;
         
         public void SetMovementX(float movementX) => _movementX = movementX;
+        
         
         private void FixedUpdate()
         {
@@ -70,11 +78,17 @@ namespace Code.Entities
 
         private void MoveCharacter()
         {
-            _renderer.FlipController(_movementX);
-            _rbCompo.linearVelocityX = _movementX * moveSpeed * _moveSpeedMultiplier;
-            _renderer.SetParam(ySpeedParam, _rbCompo.linearVelocity.y); //현재 움직임의 Y값을 애니메이터에 전달.
+            if (CanManualMove)
+            {
+                _renderer.FlipController(_movementX);
+                _rbCompo.linearVelocityX = _movementX * moveSpeed * _moveSpeedMultiplier;
+            }
+            
+            _renderer.SetParam(ySpeedParam, _rbCompo.linearVelocityY); //현재 움직임의 Y값을 애니메이터에 전달.
             OnMoveVelocityChange?.Invoke(_rbCompo.linearVelocity);
         }
+        
+        public void SendOnGroundParam() => _renderer.SetParam(onGroundParam);
         
         private void OnDrawGizmos()
         {
@@ -83,6 +97,5 @@ namespace Code.Entities
             Gizmos.DrawWireCube(groundTrm.position, groundCheckSize);
         }
 
-        
     }
 }

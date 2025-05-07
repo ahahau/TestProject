@@ -1,47 +1,63 @@
-
 using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-[CreateAssetMenu(fileName = "PlayerInput", menuName = "SO/PlayerInput", order = 0)]
-public class PlayerInputSO : ScriptableObject, Controls.IPlayerActions
+namespace Code.Player
 {
-    public event Action OnJumpPress;
-    public event Action OnAttackPress;
-    
-    public Vector2 InputDirection { get; private set; }
-    
-    private Controls _controls;
-
-    private void OnEnable()
+    [CreateAssetMenu(fileName = "PlayerInput", menuName = "SO/PlayerInput", order = 0)]
+    public class PlayerInputSO : ScriptableObject, Controls.IPlayerActions
     {
-        if (_controls == null)
+        public event Action OnJumpPress;
+        public event Action OnAttackPress;
+        public event Action OnDropPress;
+        public event Action OnDashPress;
+        
+        public Vector2 InputDirection { get; private set; }
+        
+        private Controls _controls;
+
+        private void OnEnable()
         {
-            _controls = new Controls();
-            _controls.Player.SetCallbacks(this);
+            if (_controls == null)
+            {
+                _controls = new Controls();
+                _controls.Player.SetCallbacks(this);
+            }
+            _controls.Player.Enable();
         }
-        _controls.Player.Enable();
-    }
 
-    private void OnDisable()
-    {
-        _controls.Player.Disable();
-    }
+        private void OnDisable()
+        {
+            _controls.Player.Disable();
+        }
 
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        InputDirection = context.ReadValue<Vector2>();
-    }
+        public void OnMove(InputAction.CallbackContext context)
+        {
+            InputDirection = context.ReadValue<Vector2>();
+        }
 
-    public void OnAttack(InputAction.CallbackContext context)
-    {
-        if(context.performed)
-            OnAttackPress?.Invoke();
-    }
+        public void OnAttack(InputAction.CallbackContext context)
+        {
+            if(context.performed)
+                OnAttackPress?.Invoke();
+        }
 
-    public void OnJump(InputAction.CallbackContext context)
-    {
-        if(context.performed)
-            OnJumpPress?.Invoke();
+        public void OnJump(InputAction.CallbackContext context)
+        {
+            if(context.performed)
+                OnJumpPress?.Invoke();
+        }
+
+        public void OnDrop(InputAction.CallbackContext context)
+        {
+            if(context.performed)
+                OnDropPress?.Invoke();
+        }
+
+        public void OnDash(InputAction.CallbackContext context)
+        {
+            if(context.performed)
+                OnDashPress?.Invoke();
+        }
     }
 }

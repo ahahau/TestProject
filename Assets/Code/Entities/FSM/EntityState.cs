@@ -1,3 +1,5 @@
+using UnityEngine;
+
 namespace Code.Entities.FSM
 {
     public abstract class EntityState
@@ -20,12 +22,14 @@ namespace Code.Entities.FSM
             _renderer.SetParam(_stateAnim, true);
             _isTriggerCall = false;
         }
-        public virtual void Update() {}
+
+        public virtual void Update()  { } //아무것도 하지 않는다.
 
         public virtual void Exit()
         {
             _renderer.SetParam(_stateAnim, false);
         }
+
         public virtual void AnimationEnd() => _isTriggerCall = true;
     }
 }
