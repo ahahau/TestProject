@@ -12,7 +12,7 @@ namespace Code.Entities
         
         private Entity _entity;
         
-        public void Initialize(Entity entity)
+        public virtual void Initialize(Entity entity)
         {
             _entity = entity;
         }

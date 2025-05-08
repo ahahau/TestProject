@@ -10,6 +10,7 @@ namespace Code.Entities
         [SerializeField] private float moveSpeed = 5f;
         [SerializeField] private AnimParamSO ySpeedParam;
         [SerializeField] private AnimParamSO onGroundParam;
+        [SerializeField] private bool updateYSpeedParam = true;
 
         [Header("Ground check")] 
         [SerializeField] private Transform groundTrm;
@@ -34,7 +35,7 @@ namespace Code.Entities
         public void Initialize(Entity entity)
         {
             _entity = entity;
-            _renderer = entity.GetCompo<EntityRenderer>();
+            _renderer = entity.GetCompo<EntityRenderer>(true);
             _rbCompo = entity.GetComponent<Rigidbody2D>();
             _originalGravityScale = _rbCompo.gravityScale;
             _moveSpeedMultiplier = 1f;
@@ -83,8 +84,8 @@ namespace Code.Entities
                 _renderer.FlipController(_movementX);
                 _rbCompo.linearVelocityX = _movementX * moveSpeed * _moveSpeedMultiplier;
             }
-            
-            _renderer.SetParam(ySpeedParam, _rbCompo.linearVelocityY); //현재 움직임의 Y값을 애니메이터에 전달.
+            if(updateYSpeedParam)
+                _renderer.SetParam(ySpeedParam, _rbCompo.linearVelocityY); //현재 움직임의 Y값을 애니메이터에 전달.
             OnMoveVelocityChange?.Invoke(_rbCompo.linearVelocity);
         }
         

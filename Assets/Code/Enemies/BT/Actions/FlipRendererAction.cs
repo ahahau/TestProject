@@ -7,15 +7,14 @@ using Action = Unity.Behavior.Action;
 namespace Code.Enemies.BT.Actions
 {
     [Serializable, GeneratePropertyBag]
-    [NodeDescription(name: "ChangeClip", story: "Change to [newClip] in [Renderer]", category: "Enemy/Action", id: "afcc795e2dafc1259404a6652213950f")]
-    public partial class ChangeClipAction : Action
+    [NodeDescription(name: "FlipRenderer", story: "Flip [Renderer]", category: "Enemy/Action", id: "d50ec794ebec013da89d99022dea8e2e")]
+    public partial class FlipRendererAction : Action
     {
-        [SerializeReference] public BlackboardVariable<AnimatorEnum> NewClip;
         [SerializeReference] public BlackboardVariable<EnemyRenderer> Renderer;
 
         protected override Status OnStart()
         {
-            Renderer.Value.ChangeClip(NewClip.Value);
+            Renderer.Value.Flip();
             return Status.Success;
         }
     }

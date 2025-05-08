@@ -7,7 +7,7 @@ using Action = Unity.Behavior.Action;
 using Unity.Properties;
 
 [Serializable, GeneratePropertyBag]
-[NodeDescription(name: "MoveToFront", story: "[Self] move to front in [Second]", category: "Action", id: "59fc8cd7cbe15dfd0bd476dd83c9f2d5")]
+[NodeDescription(name: "MoveToFront", story: "[Self] move to front in [Second]", category: "Enemy/Action", id: "59fc8cd7cbe15dfd0bd476dd83c9f2d5")]
 public partial class MoveToFrontAction : Action
 {
     [SerializeReference] public BlackboardVariable<Enemy> Self;

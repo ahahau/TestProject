@@ -16,9 +16,6 @@ namespace Code.Enemies
             _btAgent = GetComponent<BehaviorGraphAgent>();
         }
 
-        public RaycastHit2D CheckPlayerInRange(float distance)
-        {
-            return Physics2D.Raycast(transform.position+ new Vector3(0,bodyOffset), transform.right, distance, whatIsPlayer);
-        }
+        public abstract bool CheckPlayerInRange();
     }
 }
