@@ -1,11 +1,12 @@
 using System;
+using Code.Entities;
 using Unity.Behavior;
 using UnityEngine;
 
 namespace Code.Enemies.BT.Conditions
 {
     [Serializable, Unity.Properties.GeneratePropertyBag]
-    [Condition(name: "CheckForwardGround", story: "[Forward] ground is [CheckValue]", category: "Enemy/Conditions", id: "a430a299d4125ffd31fb1e7cbb087056")]
+    [Condition(name: "CheckForwardGround", story: "[Forward] ground is [CheckValue]", category: "Enemy/Conditions", id: "4b603e91df15fecda2e821ade0e7bd8f")]
     public partial class CheckForwardGroundCondition : Condition
     {
         [SerializeReference] public BlackboardVariable<ForwardChecker> Forward;
@@ -16,5 +17,6 @@ namespace Code.Enemies.BT.Conditions
             bool isGroundOnForward = Forward.Value.CheckForwardGround();
             return isGroundOnForward == CheckValue.Value;
         }
+
     }
 }

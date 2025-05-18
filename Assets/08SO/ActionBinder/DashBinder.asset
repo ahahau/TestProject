@@ -9,9 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ed47e089aee40ebbb3476cdc77b6e7e, type: 3}
+  m_Script: {fileID: 11500000, guid: bee2158c968345ab9572cafab388d3e7, type: 3}
   m_Name: DashBinder
   m_EditorClassIdentifier: 
   interfaceName: Code.Entities.FSM.ICanDashState
   inputEventName: OnDashPress
-  methodName: HandleDashPress
+  bindMethodName: HandleDashPress

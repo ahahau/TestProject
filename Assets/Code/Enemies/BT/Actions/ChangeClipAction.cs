@@ -1,23 +1,23 @@
+using Code.Enemies;
+using Code.Enemies.BT;
 using System;
 using Unity.Behavior;
-using Unity.Properties;
 using UnityEngine;
 using Action = Unity.Behavior.Action;
+using Unity.Properties;
 
-namespace Code.Enemies.BT.Actions
+[Serializable, GeneratePropertyBag]
+[NodeDescription(name: "ChangeClip", story: "Change [newClip] in [renderer]", category: "Enemy/Action", id: "8fecbef111e43ba27274e0acc3aa6984")]
+public partial class ChangeClipAction : Action
 {
-    [Serializable, GeneratePropertyBag]
-    [NodeDescription(name: "ChangeClip", story: "Change to [newClip] in [Renderer]", category: "Enemy/Action", id: "afcc795e2dafc1259404a6652213950f")]
-    public partial class ChangeClipAction : Action
-    {
-        [SerializeReference] public BlackboardVariable<AnimatorEnum> NewClip;
-        [SerializeReference] public BlackboardVariable<EnemyRenderer> Renderer;
+    [SerializeReference] public BlackboardVariable<AnimatorEnum> NewClip;
+    [SerializeReference] public BlackboardVariable<EnemyRenderer> Renderer;
 
-        protected override Status OnStart()
-        {
-            Renderer.Value.ChangeClip(NewClip.Value);
-            return Status.Success;
-        }
+    protected override Status OnStart()
+    {
+        Renderer.Value.ChangeClip(NewClip.Value);
+        return Status.Success;
     }
+
 }
 

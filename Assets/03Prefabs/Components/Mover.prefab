@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &8687014263865796528
+--- !u!1 &3961407774203550753
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,43 +8,48 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6394528476232467087}
-  - component: {fileID: 8122929579259350442}
-  m_Layer: 0
-  m_Name: ForwardChecker
+  - component: {fileID: 696487596579809259}
+  - component: {fileID: 1433093758562793447}
+  m_Layer: 6
+  m_Name: Mover
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6394528476232467087
+--- !u!4 &696487596579809259
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8687014263865796528}
+  m_GameObject: {fileID: 3961407774203550753}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.07, y: 0, z: 0}
+  m_LocalPosition: {x: -0.035, y: -0.526, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8122929579259350442
+--- !u!114 &1433093758562793447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8687014263865796528}
+  m_GameObject: {fileID: 3961407774203550753}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: feaf5aa18e84433e8603cf9b4008e91a, type: 3}
+  m_Script: {fileID: 11500000, guid: 42dcb90c2a154a638b3d9cae6e9ec457, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  checkRadius: 0.25
+  moveSpeed: 5
+  ySpeedParam: {fileID: 11400000, guid: 33e2e3016693a244fa9a21ae42be95de, type: 2}
+  onGroundParam: {fileID: 11400000, guid: 80b2fb99af6091848a668a4f29bda654, type: 2}
+  groundTrm: {fileID: 696487596579809259}
   whatIsGround:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
+  groundCheckSize: {x: 0.4, y: 0.2}
+  <IsGrounded>k__BackingField: 0

@@ -1,14 +1,15 @@
 using System;
 using System.Collections.Generic;
+using Code.Enemies.BT;
 using Code.Entities;
 using UnityEngine;
 
-namespace Code.Enemies.BT
+namespace Code.Enemies
 {
     public class EnemyRenderer : EntityRenderer
     {
         [SerializeField] private AnimParamSO[] paramList;
-
+        
         private AnimParamSO _currentClip;
         private Dictionary<AnimatorEnum, AnimParamSO> _paramDictionary;
 
@@ -18,13 +19,14 @@ namespace Code.Enemies.BT
             _paramDictionary = new Dictionary<AnimatorEnum, AnimParamSO>();
             foreach (AnimParamSO param in paramList)
             {
+                //param.paramName 에서 AnimatorEnum으로 변환
                 if (AnimatorEnum.TryParse(param.paramName, out AnimatorEnum animatorEnum))
                 {
                     _paramDictionary.Add(animatorEnum, param);
                 }
                 else
                 {
-                    Debug.LogWarning($"{param.paramName} is not a valid animator parameter");
+                    Debug.LogWarning($"No enum found for {param.paramName}");
                 }
             }
         }
@@ -34,7 +36,7 @@ namespace Code.Enemies.BT
             if(_currentClip != null)
                 SetParam(_currentClip, false);
             _currentClip = _paramDictionary.GetValueOrDefault(newClip);
-            Debug.Assert(_currentClip != null, $"{newClip} is not a valid animator parameter");
+            Debug.Assert(_currentClip != null, $"No clip found for {newClip}");
             SetParam(_currentClip, true);
         }
     }

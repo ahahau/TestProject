@@ -102,19 +102,6 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -200,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b6699661c94a32e48b39dfa809ff8979
-      internalID: 1508255539
+      spriteID: 58366712f6d78c94c8cada0204ac7117
+      internalID: -209743022
       vertices: []
       indices: 
       edges: []
@@ -222,8 +209,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 962c4bb298d4a5f4d889f2a9d5455fbe
-      internalID: -789250448
+      spriteID: c4a7ae5a275e2c24a9c5596c06bad712
+      internalID: -202285124
       vertices: []
       indices: 
       edges: []
@@ -244,8 +231,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6da5cbb43dd5f094fbbc73a88966f517
-      internalID: 679304454
+      spriteID: a26c650fc54cf7443bc619ee66130f8b
+      internalID: 782516535
       vertices: []
       indices: 
       edges: []
@@ -254,7 +241,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 29475e9173d96e44f855a8a2e61ccfcd
+    spriteID: c1362223a734deb44bba63159c68ac9d
     internalID: 0
     vertices: []
     indices: 
@@ -267,9 +254,9 @@ TextureImporter:
       goblin_death_anim_strip_6_0: -4454485551354414918
       goblin_death_anim_strip_6_1: 6609010165032081395
       goblin_death_anim_strip_6_2: -6310726310726893129
-      goblin_death_anim_strip_6_3: 1508255539
-      goblin_death_anim_strip_6_4: -789250448
-      goblin_death_anim_strip_6_5: 679304454
+      goblin_death_anim_strip_6_3: -209743022
+      goblin_death_anim_strip_6_4: -202285124
+      goblin_death_anim_strip_6_5: 782516535
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

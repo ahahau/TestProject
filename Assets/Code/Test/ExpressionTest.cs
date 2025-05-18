@@ -6,22 +6,23 @@ namespace Code.Test
 {
     public class ExpressionTest : MonoBehaviour
     {
-        public Func<int, int> TestFunc;
+        public Func<int, int, int> TestFunc;
+        
         [ContextMenu("MakeAction")]
         private void MakeAction()
         {
-            // 값 1개가 들어오면 1개를 리턴 해주는
-            // x + 5 더해서 리턴해주는 함수
-            ConstantExpression five = Expression.Constant(5);
-            ParameterExpression xParam = Expression.Parameter(typeof(int), "x");
-            BinaryExpression addOperation = Expression.Add(xParam, five);
-            
-            TestFunc = Expression.Lambda<Func<int, int>>(addOperation, xParam).Compile();
+            // 값 1 개가 들어오면 1개를 리턴 해주는 
+            //  x + 5 더해서 리턴해주는 함수.
+            ParameterExpression aParam = Expression.Parameter(typeof(int), "a");
+            ParameterExpression bParam = Expression.Parameter(typeof(int), "b");
+            BinaryExpression addOperation = Expression.Add(aParam, bParam);
+
+            TestFunc = Expression.Lambda<Func<int, int, int>>(addOperation, aParam, bParam).Compile();
         }
 
-        private int AddFive(int x)
+        private int Add(int a, int b)
         {
-            return x + 5;
+            return a + b;
         }
 
         [ContextMenu("RunAction")]
@@ -33,7 +34,7 @@ namespace Code.Test
             }
             else
             {
-                Debug.Log($"실행결과는 : {TestFunc(10)}");
+                Debug.Log($"실행 결과는 : {TestFunc(5, 10)}");
             }
         }
     }

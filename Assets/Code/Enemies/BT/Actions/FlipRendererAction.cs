@@ -7,7 +7,7 @@ using Action = Unity.Behavior.Action;
 namespace Code.Enemies.BT.Actions
 {
     [Serializable, GeneratePropertyBag]
-    [NodeDescription(name: "FlipRenderer", story: "Flip [Renderer]", category: "Enemy/Action", id: "d50ec794ebec013da89d99022dea8e2e")]
+    [NodeDescription(name: "FlipRenderer", story: "Flip [Renderer]", category: "Enemy/Action", id: "b26d28fa6bcdcfcefb99279f65287139")]
     public partial class FlipRendererAction : Action
     {
         [SerializeReference] public BlackboardVariable<EnemyRenderer> Renderer;

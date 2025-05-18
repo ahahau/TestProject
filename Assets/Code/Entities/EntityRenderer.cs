@@ -10,7 +10,7 @@ namespace Code.Entities
 
         [SerializeField] private Animator animator;
         
-        private Entity _entity;
+        protected Entity _entity;
         
         public virtual void Initialize(Entity entity)
         {

@@ -84,8 +84,10 @@ namespace Code.Entities
                 _renderer.FlipController(_movementX);
                 _rbCompo.linearVelocityX = _movementX * moveSpeed * _moveSpeedMultiplier;
             }
+            
             if(updateYSpeedParam)
                 _renderer.SetParam(ySpeedParam, _rbCompo.linearVelocityY); //현재 움직임의 Y값을 애니메이터에 전달.
+            
             OnMoveVelocityChange?.Invoke(_rbCompo.linearVelocity);
         }
         

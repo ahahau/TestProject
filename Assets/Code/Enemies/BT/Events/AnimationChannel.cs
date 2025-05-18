@@ -9,7 +9,7 @@ namespace Code.Enemies.BT.Events
     [CreateAssetMenu(menuName = "Behavior/Event Channels/AnimationChannel")]
 #endif
     [Serializable, GeneratePropertyBag]
-    [EventChannelDescription(name: "AnimationChannel", message: "Change to [newClip]", category: "Events", id: "50e02803806e467ae899f8c81f11c494")]
+    [EventChannelDescription(name: "AnimationChannel", message: "Change to [newClip]", category: "Events", id: "6ce4771f2a98b7af8f936fd453982cd7")]
     public partial class AnimationChannel : EventChannelBase
     {
         public delegate void AnimationChannelEventHandler(AnimatorEnum newClip);

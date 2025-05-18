@@ -2,7 +2,6 @@ using System;
 using System.Collections.Generic;
 using Code.Entities;
 using Code.Entities.FSM;
-using Code.Player.FSM;
 using UnityEngine;
 using UnityEngine.PlayerLoop;
 
@@ -14,11 +13,11 @@ namespace Code.Player
 
         public float dashSpeed = 25f;
         public float dashDuration = 0.2f;
-        
+
         public float jumpPower = 4f;
         [SerializeField] private int jumpCount = 2;
         [SerializeField] private StateSO[] stateList;
-        
+
         private int _currentJumpCount = 0;
         private EntityMover _mover;
         private PlayerAttackCompo _atkCompo;
@@ -26,8 +25,9 @@ namespace Code.Player
 
         private Dictionary<Type, (Action subscribe, Action unsubscribe)> _subscriptions;
         public string CurrentStateName { get; private set; }
-        
+
         [SerializeField] private ActionBinderSO[] actionBinders;
+
         protected override void Awake()
         {
             base.Awake();
@@ -46,12 +46,13 @@ namespace Code.Player
             base.AfterInitialize();
             _mover.OnGroundStatusChange += HandleGroundStatusChange;
             PlayerInput.OnJumpPress += HandleJumpPress;
-            
+
             _subscriptions = new Dictionary<Type, (Action, Action)>();
-            foreach(var actionBinder in actionBinders)
+            foreach (var actionBinder in actionBinders)
             {
                 actionBinder.Compile(this);
-                _subscriptions.Add(actionBinder.InterfaceType, (actionBinder.SubscribeAction, actionBinder.UnSubscribeAction));
+                _subscriptions.Add(actionBinder.InterfaceType,
+                    (actionBinder.SubscribeAction, actionBinder.UnSubscribeAction));
             }
         }
 
@@ -65,7 +66,7 @@ namespace Code.Player
         {
             _stateMachine.ChangeState("IDLE"); //처음 시작했을 때 IDLE로 설정한다.
         }
-        
+
         private void Update()
         {
             _stateMachine.UpdateMachine();
@@ -82,8 +83,9 @@ namespace Code.Player
                     subscription.Value.subscribe, subscription.Value.unsubscribe);
             }
         }
-        
-        private void UpdateSubscription(Type interfaceType, EntityState oldState, EntityState newState, Action subscribe, Action unsubscribe)
+
+        private void UpdateSubscription(Type interfaceType, EntityState oldState, EntityState newState,
+            Action subscribe, Action unsubscribe)
         {
             //IsInstanceOfType => 지정된 object가 Type의 객체인지 확인합니다.
             if (interfaceType.IsInstanceOfType(oldState))
@@ -117,7 +119,7 @@ namespace Code.Player
         {
             const string jumpName = "JUMP";
             const string doubleJumpName = "DOUBLE_JUMP";
-            
+
             if (_mover.IsGrounded || _currentJumpCount > 0)
             {
                 _currentJumpCount--;
@@ -127,7 +129,5 @@ namespace Code.Player
         }
 
         public void AnimationEndTrigger() => _stateMachine.CurrentState.AnimationEnd();
-        
-        
     }
 }

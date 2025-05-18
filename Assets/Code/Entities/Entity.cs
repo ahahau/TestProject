@@ -40,6 +40,15 @@ namespace Code.Entities
             }
         }
 
+        public IEntityComponent GetCompo(Type type)
+        {
+            if (_components.TryGetValue(type, out IEntityComponent component))
+            {
+                return component;
+            }
+            return default;
+        }
+        
         public T GetCompo<T>(bool isDerived = false) where T : IEntityComponent
         {
             if(_components.TryGetValue(typeof(T), out IEntityComponent component))

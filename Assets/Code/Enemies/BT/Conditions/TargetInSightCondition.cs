@@ -1,19 +1,20 @@
-using Code.Enemies;
 using System;
 using Unity.Behavior;
 using UnityEngine;
 
-[Serializable, Unity.Properties.GeneratePropertyBag]
-[Condition(name: "TargetInSight", story: "[Enemy] check target in sight [CheckValue]", category: "Conditions", id: "32e662a74c40985c8f90aa0061461f1c")]
-public partial class TargetInSightCondition : Condition
+namespace Code.Enemies.BT.Conditions
 {
-    [SerializeReference] public BlackboardVariable<Enemy> Enemy;
-    [SerializeReference] public BlackboardVariable<bool> CheckValue;
-
-    public override bool IsTrue()
+    [Serializable, Unity.Properties.GeneratePropertyBag]
+    [Condition(name: "TargetInSight", story: "[Enemy] check target in sight [CheckValue]", category: "Enemy/Conditions", id: "2af40e1465be0e9aebde54828d1eaa44")]
+    public partial class TargetInSightCondition : Condition
     {
-        bool isTargetInRange = Enemy.Value.CheckPlayerInRange();
-        Debug.Log(isTargetInRange);
-        return isTargetInRange == CheckValue.Value;
+        [SerializeReference] public BlackboardVariable<Enemy> Enemy;
+        [SerializeReference] public BlackboardVariable<bool> CheckValue;
+
+        public override bool IsTrue()
+        {
+            bool isTargetInRange = Enemy.Value.CheckPlayerInRange();
+            return isTargetInRange == CheckValue.Value;
+        }
     }
 }

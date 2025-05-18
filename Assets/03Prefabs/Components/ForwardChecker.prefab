@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &378086935670016272
+--- !u!1 &4580374093509465238
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,48 +8,47 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1821817778764080917}
-  - component: {fileID: 8077774578791340404}
-  m_Layer: 6
-  m_Name: Mover
+  - component: {fileID: 3094515192066268364}
+  - component: {fileID: 5660563833634737587}
+  m_Layer: 0
+  m_Name: ForwardChecker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1821817778764080917
+--- !u!4 &3094515192066268364
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378086935670016272}
+  m_GameObject: {fileID: 4580374093509465238}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.035, y: -0.526, z: 0}
+  m_LocalPosition: {x: 0.83, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &8077774578791340404
+--- !u!114 &5660563833634737587
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 378086935670016272}
+  m_GameObject: {fileID: 4580374093509465238}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 42dcb90c2a154a638b3d9cae6e9ec457, type: 3}
+  m_Script: {fileID: 11500000, guid: b4118cf4be804bf38cc45e507ec2c82f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  ySpeedParam: {fileID: 11400000, guid: 33e2e3016693a244fa9a21ae42be95de, type: 2}
-  onGroundParam: {fileID: 11400000, guid: 80b2fb99af6091848a668a4f29bda654, type: 2}
-  groundTrm: {fileID: 1821817778764080917}
+  checkRadius: 0.25
   whatIsGround:
     serializedVersion: 2
     m_Bits: 8
-  groundCheckSize: {x: 0.4, y: 0.2}
-  <IsGrounded>k__BackingField: 0
+  wallCheckOffset: 0.35
+  whatIsWall:
+    serializedVersion: 2
+    m_Bits: 8

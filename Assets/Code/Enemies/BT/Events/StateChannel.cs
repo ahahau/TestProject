@@ -9,7 +9,7 @@ namespace Code.Enemies.BT.Events
     [CreateAssetMenu(menuName = "Behavior/Event Channels/StateChannel")]
 #endif
     [Serializable, GeneratePropertyBag]
-    [EventChannelDescription(name: "StateChannel", message: "Change to [NewState]", category: "Events", id: "051963ec9a2628cbb155582f1391dbde")]
+    [EventChannelDescription(name: "StateChannel", message: "Change to [NewState]", category: "Enemy/Events", id: "4feff7b8b020ee234ff0cd400d200ab3")]
     public partial class StateChannel : EventChannelBase
     {
         public delegate void StateChannelEventHandler(EnemyState NewState);
