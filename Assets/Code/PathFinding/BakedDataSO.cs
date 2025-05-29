@@ -55,27 +55,35 @@ namespace Code.PathFinding
                 return (path, false);
             
             openList.Push(new AstarNode{nodeData = startNode, parent = null, G = 0, F = CalH(startNode, destinationNode)});
-            
+
             bool result = false;
+
             while (openList.Count > 0)
             {
-                AstarNode currentNode = openList.Pop();
+                AstarNode currentNode = openList.Pop(); //오픈 리스트의 가장 작은 점을 가져온다.
+
                 foreach (LinkData linkData in currentNode.nodeData.neighbors)
                 {
+                    //다음 링크가 만약에 이미 방문한 노드라면 검사할 필요가 없어.
                     AstarNode isVisited = closeList.Find(n => n.nodeData.cellPosition == linkData.endCellPosition);
+                    
                     if(isVisited != null) continue;
+
                     float newG = linkData.cost + currentNode.G;
-                    NodeData nextNode = _pointDict[linkData.endCellPosition];
+                    NodeData nextNode = _pointDict[linkData.endCellPosition]; //도착지의 노드데이터
 
                     AstarNode nextOpenNode = new AstarNode
                     {
                         nodeData = nextNode, parent = currentNode, parentLinkData = linkData,
                         G = newG, F = newG + CalH(nextNode, destinationNode)
                     };
-                    AstarNode exist = openList.Contain(nextOpenNode);
+                    
+                    AstarNode exist = openList.Contains(nextOpenNode); //다음에 방문할 노드가 이미 오픈리스트에 있어.
+
                     if (exist != null)
                     {
-                        if(nextOpenNode.G < exist.G)
+                        //이미 오픈리스트에 존재한다면 누가 더 짧은지를 계산해서 갱신한다.
+                        if (nextOpenNode.G < exist.G) //지금연결하는게 기존연결보다 빠른거지
                         {
                             exist.G = nextOpenNode.G;
                             exist.F = nextOpenNode.F;
@@ -87,14 +95,17 @@ namespace Code.PathFinding
                     {
                         openList.Push(nextOpenNode);
                     }
-                }
-                closeList.Add(currentNode);
+                } //end of foreach
+                
+                closeList.Add(currentNode); //현재 방문한 노드는 클로즈 리스트로 들어간다.
+
                 if (currentNode.nodeData == destinationNode)
                 {
                     result = true;
                     break;
                 }
-            }
+                
+            } //end of while
 
             if (result)
             {
@@ -108,12 +119,14 @@ namespace Code.PathFinding
                 }
                 
                 path.Add(last.nodeData);
-                path.Reverse();
+                path.Reverse(); //시작점부터 끝점으로 변경된다.
             }
+
             return (path, result);
         }
 
-        private float CalH(NodeData startNode, NodeData destinationNode) => Vector3Int.Distance(destinationNode.cellPosition, startNode.cellPosition);
+        private float CalH(NodeData startNode, NodeData destinationNode)
+            => Vector3Int.Distance(destinationNode.cellPosition, startNode.cellPosition);
 
         private NodeData FindClosetGroundNode(Vector3 startPosition)
         {

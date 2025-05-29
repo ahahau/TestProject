@@ -25,6 +25,7 @@ namespace Code.PathFinding
         public float cost; //비용
         public LinkType linkType;
     }
+    
     [Serializable]
     public class NodeData : IComparable<NodeData>
     {

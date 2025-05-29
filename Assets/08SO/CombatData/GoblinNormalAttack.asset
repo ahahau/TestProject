@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 400ab9bc301d471f88d49d2a9dc997c9, type: 3}
+  m_Name: GoblinNormalAttack
+  m_EditorClassIdentifier: 
+  damage: 5
+  attackClip: {fileID: 7400000, guid: 77c395d92677807458356d7a8409755e, type: 2}
+  movement: {x: 12, y: 0}
+  knockBackPower: {x: 2.5, y: 5}
+  movementCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: -0.062305514
+      outSlope: -0.062305514
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0.12995951
+    - serializedVersion: 3
+      time: 0.6724777
+      value: 0.7484174
+      inSlope: -1.1612619
+      outSlope: -1.1612619
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.08278584
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.998291
+      value: 0.0036315918
+      inSlope: -1.5485951
+      outSlope: -1.5485951
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.15466774
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
