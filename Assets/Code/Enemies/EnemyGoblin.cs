@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UIElements;
 
 namespace Code.Enemies
 {
@@ -22,10 +21,9 @@ namespace Code.Enemies
 
             if (collider == null) return false;
             
-            
+            //여기서 나중에 플레이어와 나 사이에 장애물이 있는지도 체크해야해.
+
             Vector3 direction = collider.transform.position - position; //플레이어로의 방향을 구한다.
-            CheckObstacleInLine(position, direction);
-            
             float angle = Vector3.Angle(direction.normalized, transform.right);
 
             bool isInAngle = angle < detectAngle * 0.5f;
@@ -33,12 +31,6 @@ namespace Code.Enemies
                 Target = collider.transform; //타겟을 플레이어로 설정.
             
             return isInAngle;
-        }
-
-        private bool CheckObstacleInLine(Vector3 position, Vector3 direction)
-        {
-            RaycastHit2D hit = Physics2D.Raycast(position, direction.normalized, direction.magnitude, whatIsObstacle);
-            return hit.collider != null;
         }
 
         public override bool IsTargetInAttackRange()
@@ -50,18 +42,6 @@ namespace Code.Enemies
             //높이는 0.5 이내이면서 가로로 공격사거리에 들어왔다면 가능하다고 return 해준다.
             const float heightLimit = 0.5f;
             return Mathf.Abs(distance.y) < heightLimit && Mathf.Abs(distance.x) < attackDistance;
-        }
-
-        public override bool CheckChaseTargetInRange(Transform target)
-        {
-            Vector3 position = transform.position + new Vector3(0, bodyOffset);
-            Vector3 direction = target.position - position;
-            if (CheckObstacleInLine(position, direction))
-            {
-                return false;
-            }
-
-            return direction.magnitude < detectDistance; //시야거리 안에 있는가만 체크
         }
     }
 }

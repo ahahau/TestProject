@@ -100,9 +100,5 @@ namespace Code.Entities
             Gizmos.DrawWireCube(groundTrm.position, groundCheckSize);
         }
 
-        public void ManualMove(Vector2 position)
-        {
-            _rbCompo.MovePosition(position);
-        }
     }
 }

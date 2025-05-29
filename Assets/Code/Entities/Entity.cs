@@ -2,16 +2,11 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
-using UnityEngine.Events;
 
 namespace Code.Entities
 {
     public abstract class Entity : MonoBehaviour
     {
-        public UnityEvent OnHitEvent;
-        public UnityEvent OnDeadEvent;
-        
-        public bool IsDead { get; set; }
         protected Dictionary<Type, IEntityComponent> _components = new Dictionary<Type, IEntityComponent>();
 
         protected virtual void Awake()

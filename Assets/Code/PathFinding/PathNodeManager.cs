@@ -172,7 +172,7 @@ namespace Code.PathFinding
                     }
                 }
             });
-
+            
         }
 
         private void OnDrawGizmos()

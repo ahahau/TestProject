@@ -1,4 +1,3 @@
-
 using System;
 using UnityEngine;
 
@@ -8,25 +7,23 @@ namespace Code.PathFinding
     {
         public NodeData nodeData;
         public AstarNode parent;
-        public LinkData parentLinkData; //무슨 링크를 타고 여기를 온건지. 
+        public LinkData parentLinkData;
 
         public float G;
         public float F;
-        
+
         public int CompareTo(AstarNode other)
         {
             if (Mathf.Approximately(other.F, F))
                 return 0;
-
-            return other.F < F ? -1 : 1;
+            return other.F < F ? -1: 1;
         }
 
         public override bool Equals(object obj)
         {
             AstarNode astarObj = obj as AstarNode;
-            if(astarObj is null)
-                return false; //비교 대상이 널이면 다르다.
-
+            if (astarObj is null)
+                return false;
             return nodeData == astarObj.nodeData;
         }
 
@@ -36,7 +33,7 @@ namespace Code.PathFinding
         {
             if (lhs is null)
             {
-                if (rhs is null)
+                if(rhs is null)
                     return true;
                 return false;
             }
@@ -44,5 +41,6 @@ namespace Code.PathFinding
             return lhs.Equals(rhs);
         }
         public static bool operator !=(AstarNode lhs, AstarNode rhs) => !(lhs == rhs);
+        
     }
 }
