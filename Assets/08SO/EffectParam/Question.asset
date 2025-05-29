@@ -9,9 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 134a6f96d34f4959a7bbcf6901bda180, type: 3}
-  m_Name: GoblineAgent
+  m_Script: {fileID: 11500000, guid: 2abf66eee9994d3cb74c2f7503cd5a31, type: 3}
+  m_Name: Question
   m_EditorClassIdentifier: 
-  jumpDistance: 5
-  jumpHeight: 1.23
-  dropHeight: 3
+  paramName: Question
+  hashValue: 1333865240

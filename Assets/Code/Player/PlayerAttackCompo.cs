@@ -1,3 +1,4 @@
+using Code.Combat;
 using Code.Entities;
 using UnityEngine;
 
@@ -8,6 +9,8 @@ namespace Code.Player
         [SerializeField] private float _atkCooldown;
         [SerializeField] private AnimParamSO attackTrigger;
         [SerializeField] private Animator attackAnimator;
+        [SerializeField] private DamageCaster damageCaster;
+        [SerializeField] private AttackDataSO attackData;
 
         private PlayerController _player;
         private PlayerAnimatorTrigger _trigger;
@@ -17,6 +20,7 @@ namespace Code.Player
         {
             _player = entity as PlayerController;
             _trigger = entity.GetCompo<PlayerAnimatorTrigger>();
+            damageCaster.InitCaster(entity);
         }
 
         //공격 시도
@@ -42,6 +46,14 @@ namespace Code.Player
         {
             attackAnimator.SetTrigger(attackTrigger.hashValue);
             Debug.Log("<color=red>Attack!!</color>");
+        }
+
+        private void CastAttack()
+        {
+            Vector3 direction = transform.position - _player.transform.position;
+            Vector2 knockBack = attackData.knockBackPower;
+            knockBack.x *= Mathf.Sign(direction.x);
+            damageCaster.CastDamage(attackData.damage, direction, knockBack);
         }
     }
 }

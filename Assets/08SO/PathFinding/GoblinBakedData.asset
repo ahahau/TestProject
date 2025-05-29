@@ -9,7 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: efb5c2048d9046fc801f9be5cb174545, type: 3}
+  m_Script: {fileID: 11500000, guid: ed70ad3a90eb49a4ac37978f6438666a, type: 3}
   m_Name: GoblinBakedData
   m_EditorClassIdentifier: 
   points:
@@ -75,6 +75,12 @@ MonoBehaviour:
       endCellPosition: {x: -10, y: -1, z: 0}
       cost: 1
       linkType: 0
+    - start: {x: -10.5, y: -0.5, z: 0}
+      startCellPosition: {x: -11, y: -1, z: 0}
+      end: {x: -8.5, y: -1.5, z: 0}
+      endCellPosition: {x: -9, y: -2, z: 0}
+      cost: 2.236068
+      linkType: 1
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -220,6 +226,29 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
+  - worldPosition: {x: -4.5, y: 2.5, z: 0}
+    cellPosition: {x: -5, y: 2, z: 0}
+    nodeType: 4
+    neighbors:
+    - start: {x: -4.5, y: 2.5, z: 0}
+      startCellPosition: {x: -5, y: 2, z: 0}
+      end: {x: -5.5, y: 2.5, z: 0}
+      endCellPosition: {x: -6, y: 2, z: 0}
+      cost: 1
+      linkType: 0
+    - start: {x: -4.5, y: 2.5, z: 0}
+      startCellPosition: {x: -5, y: 2, z: 0}
+      end: {x: -3.5, y: 2.5, z: 0}
+      endCellPosition: {x: -4, y: 2, z: 0}
+      cost: 1
+      linkType: 0
+    pathLink:
+      start: {x: 0, y: 0, z: 0}
+      startCellPosition: {x: 0, y: 0, z: 0}
+      end: {x: 0, y: 0, z: 0}
+      endCellPosition: {x: 0, y: 0, z: 0}
+      cost: 0
+      linkType: 0
   - worldPosition: {x: -3.5, y: -2.5, z: 0}
     cellPosition: {x: -4, y: -3, z: 0}
     nodeType: 1
@@ -243,6 +272,29 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
+  - worldPosition: {x: -3.5, y: 2.5, z: 0}
+    cellPosition: {x: -4, y: 2, z: 0}
+    nodeType: 1
+    neighbors:
+    - start: {x: -3.5, y: 2.5, z: 0}
+      startCellPosition: {x: -4, y: 2, z: 0}
+      end: {x: -4.5, y: 2.5, z: 0}
+      endCellPosition: {x: -5, y: 2, z: 0}
+      cost: 1
+      linkType: 0
+    - start: {x: -3.5, y: 2.5, z: 0}
+      startCellPosition: {x: -4, y: 2, z: 0}
+      end: {x: -2.5, y: 2.5, z: 0}
+      endCellPosition: {x: -3, y: 2, z: 0}
+      cost: 1
+      linkType: 0
+    pathLink:
+      start: {x: 0, y: 0, z: 0}
+      startCellPosition: {x: 0, y: 0, z: 0}
+      end: {x: 0, y: 0, z: 0}
+      endCellPosition: {x: 0, y: 0, z: 0}
+      cost: 0
+      linkType: 0
   - worldPosition: {x: -2.5, y: -2.5, z: 0}
     cellPosition: {x: -3, y: -3, z: 0}
     nodeType: 1
@@ -257,6 +309,29 @@ MonoBehaviour:
       startCellPosition: {x: -3, y: -3, z: 0}
       end: {x: -1.5, y: -2.5, z: 0}
       endCellPosition: {x: -2, y: -3, z: 0}
+      cost: 1
+      linkType: 0
+    pathLink:
+      start: {x: 0, y: 0, z: 0}
+      startCellPosition: {x: 0, y: 0, z: 0}
+      end: {x: 0, y: 0, z: 0}
+      endCellPosition: {x: 0, y: 0, z: 0}
+      cost: 0
+      linkType: 0
+  - worldPosition: {x: -2.5, y: 2.5, z: 0}
+    cellPosition: {x: -3, y: 2, z: 0}
+    nodeType: 1
+    neighbors:
+    - start: {x: -2.5, y: 2.5, z: 0}
+      startCellPosition: {x: -3, y: 2, z: 0}
+      end: {x: -3.5, y: 2.5, z: 0}
+      endCellPosition: {x: -4, y: 2, z: 0}
+      cost: 1
+      linkType: 0
+    - start: {x: -2.5, y: 2.5, z: 0}
+      startCellPosition: {x: -3, y: 2, z: 0}
+      end: {x: -1.5, y: 2.5, z: 0}
+      endCellPosition: {x: -2, y: 2, z: 0}
       cost: 1
       linkType: 0
     pathLink:
@@ -291,7 +366,7 @@ MonoBehaviour:
       linkType: 0
   - worldPosition: {x: -1.5, y: 2.5, z: 0}
     cellPosition: {x: -2, y: 2, z: 0}
-    nodeType: 4
+    nodeType: 1
     neighbors:
     - start: {x: -1.5, y: 2.5, z: 0}
       startCellPosition: {x: -2, y: 2, z: 0}
@@ -337,7 +412,7 @@ MonoBehaviour:
       linkType: 0
   - worldPosition: {x: -0.5, y: 2.5, z: 0}
     cellPosition: {x: -1, y: 2, z: 0}
-    nodeType: 1
+    nodeType: 4
     neighbors:
     - start: {x: -0.5, y: 2.5, z: 0}
       startCellPosition: {x: -1, y: 2, z: 0}
@@ -381,29 +456,6 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
-  - worldPosition: {x: 0.5, y: 2.5, z: 0}
-    cellPosition: {x: 0, y: 2, z: 0}
-    nodeType: 1
-    neighbors:
-    - start: {x: 0.5, y: 2.5, z: 0}
-      startCellPosition: {x: 0, y: 2, z: 0}
-      end: {x: -0.5, y: 2.5, z: 0}
-      endCellPosition: {x: -1, y: 2, z: 0}
-      cost: 1
-      linkType: 0
-    - start: {x: 0.5, y: 2.5, z: 0}
-      startCellPosition: {x: 0, y: 2, z: 0}
-      end: {x: 1.5, y: 2.5, z: 0}
-      endCellPosition: {x: 1, y: 2, z: 0}
-      cost: 1
-      linkType: 0
-    pathLink:
-      start: {x: 0, y: 0, z: 0}
-      startCellPosition: {x: 0, y: 0, z: 0}
-      end: {x: 0, y: 0, z: 0}
-      endCellPosition: {x: 0, y: 0, z: 0}
-      cost: 0
-      linkType: 0
   - worldPosition: {x: 1.5, y: -2.5, z: 0}
     cellPosition: {x: 1, y: -3, z: 0}
     nodeType: 1
@@ -427,28 +479,22 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
-  - worldPosition: {x: 1.5, y: 2.5, z: 0}
-    cellPosition: {x: 1, y: 2, z: 0}
+  - worldPosition: {x: 1.5, y: 5.5, z: 0}
+    cellPosition: {x: 1, y: 5, z: 0}
     nodeType: 4
     neighbors:
-    - start: {x: 1.5, y: 2.5, z: 0}
-      startCellPosition: {x: 1, y: 2, z: 0}
-      end: {x: 0.5, y: 2.5, z: 0}
-      endCellPosition: {x: 0, y: 2, z: 0}
+    - start: {x: 1.5, y: 5.5, z: 0}
+      startCellPosition: {x: 1, y: 5, z: 0}
+      end: {x: 0.5, y: 5.5, z: 0}
+      endCellPosition: {x: 0, y: 5, z: 0}
       cost: 1
       linkType: 0
-    - start: {x: 1.5, y: 2.5, z: 0}
-      startCellPosition: {x: 1, y: 2, z: 0}
-      end: {x: 2.5, y: 2.5, z: 0}
-      endCellPosition: {x: 2, y: 2, z: 0}
-      cost: 1
-      linkType: 0
-    - start: {x: 1.5, y: 2.5, z: 0}
-      startCellPosition: {x: 1, y: 2, z: 0}
+    - start: {x: 1.5, y: 5.5, z: 0}
+      startCellPosition: {x: 1, y: 5, z: 0}
       end: {x: 2.5, y: 5.5, z: 0}
       endCellPosition: {x: 2, y: 5, z: 0}
-      cost: 3.1622777
-      linkType: 1
+      cost: 1
+      linkType: 0
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -472,12 +518,6 @@ MonoBehaviour:
       endCellPosition: {x: 3, y: -1, z: 0}
       cost: 1
       linkType: 0
-    - start: {x: 2.5, y: -0.5, z: 0}
-      startCellPosition: {x: 2, y: -1, z: 0}
-      end: {x: 1.5, y: 2.5, z: 0}
-      endCellPosition: {x: 1, y: 2, z: 0}
-      cost: 3.1622777
-      linkType: 1
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -487,7 +527,7 @@ MonoBehaviour:
       linkType: 0
   - worldPosition: {x: 2.5, y: 5.5, z: 0}
     cellPosition: {x: 2, y: 5, z: 0}
-    nodeType: 4
+    nodeType: 1
     neighbors:
     - start: {x: 2.5, y: 5.5, z: 0}
       startCellPosition: {x: 2, y: 5, z: 0}
@@ -671,7 +711,7 @@ MonoBehaviour:
       linkType: 0
   - worldPosition: {x: 6.5, y: 5.5, z: 0}
     cellPosition: {x: 6, y: 5, z: 0}
-    nodeType: 4
+    nodeType: 1
     neighbors:
     - start: {x: 6.5, y: 5.5, z: 0}
       startCellPosition: {x: 6, y: 5, z: 0}
@@ -715,6 +755,29 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
+  - worldPosition: {x: 7.5, y: 5.5, z: 0}
+    cellPosition: {x: 7, y: 5, z: 0}
+    nodeType: 4
+    neighbors:
+    - start: {x: 7.5, y: 5.5, z: 0}
+      startCellPosition: {x: 7, y: 5, z: 0}
+      end: {x: 6.5, y: 5.5, z: 0}
+      endCellPosition: {x: 6, y: 5, z: 0}
+      cost: 1
+      linkType: 0
+    - start: {x: 7.5, y: 5.5, z: 0}
+      startCellPosition: {x: 7, y: 5, z: 0}
+      end: {x: 8.5, y: 5.5, z: 0}
+      endCellPosition: {x: 8, y: 5, z: 0}
+      cost: 1
+      linkType: 0
+    pathLink:
+      start: {x: 0, y: 0, z: 0}
+      startCellPosition: {x: 0, y: 0, z: 0}
+      end: {x: 0, y: 0, z: 0}
+      endCellPosition: {x: 0, y: 0, z: 0}
+      cost: 0
+      linkType: 0
   - worldPosition: {x: 8.5, y: 1.5, z: 0}
     cellPosition: {x: 8, y: 1, z: 0}
     nodeType: 1
@@ -731,6 +794,12 @@ MonoBehaviour:
       endCellPosition: {x: 9, y: 1, z: 0}
       cost: 1
       linkType: 0
+    - start: {x: 8.5, y: 1.5, z: 0}
+      startCellPosition: {x: 8, y: 1, z: 0}
+      end: {x: 7.5, y: 5.5, z: 0}
+      endCellPosition: {x: 7, y: 5, z: 0}
+      cost: 4.1231055
+      linkType: 1
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -817,6 +886,12 @@ MonoBehaviour:
       endCellPosition: {x: 13, y: -3, z: 0}
       cost: 1
       linkType: 0
+    - start: {x: 12.5, y: -2.5, z: 0}
+      startCellPosition: {x: 12, y: -3, z: 0}
+      end: {x: 11.5, y: 1.5, z: 0}
+      endCellPosition: {x: 11, y: 1, z: 0}
+      cost: 4.1231055
+      linkType: 1
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -888,38 +963,9 @@ MonoBehaviour:
       linkType: 0
     - start: {x: 15.5, y: -2.5, z: 0}
       startCellPosition: {x: 15, y: -3, z: 0}
-      end: {x: 18.5, y: -2.5, z: 0}
-      endCellPosition: {x: 18, y: -3, z: 0}
-      cost: 3
-      linkType: 1
-    pathLink:
-      start: {x: 0, y: 0, z: 0}
-      startCellPosition: {x: 0, y: 0, z: 0}
-      end: {x: 0, y: 0, z: 0}
-      endCellPosition: {x: 0, y: 0, z: 0}
-      cost: 0
-      linkType: 0
-  - worldPosition: {x: 18.5, y: -2.5, z: 0}
-    cellPosition: {x: 18, y: -3, z: 0}
-    nodeType: 4
-    neighbors:
-    - start: {x: 18.5, y: -2.5, z: 0}
-      startCellPosition: {x: 18, y: -3, z: 0}
-      end: {x: 17.5, y: -2.5, z: 0}
-      endCellPosition: {x: 17, y: -3, z: 0}
-      cost: 1
-      linkType: 0
-    - start: {x: 18.5, y: -2.5, z: 0}
-      startCellPosition: {x: 18, y: -3, z: 0}
       end: {x: 19.5, y: -2.5, z: 0}
       endCellPosition: {x: 19, y: -3, z: 0}
-      cost: 1
-      linkType: 0
-    - start: {x: 18.5, y: -2.5, z: 0}
-      startCellPosition: {x: 18, y: -3, z: 0}
-      end: {x: 15.5, y: -2.5, z: 0}
-      endCellPosition: {x: 15, y: -3, z: 0}
-      cost: 3
+      cost: 4
       linkType: 1
     pathLink:
       start: {x: 0, y: 0, z: 0}
@@ -930,7 +976,7 @@ MonoBehaviour:
       linkType: 0
   - worldPosition: {x: 19.5, y: -2.5, z: 0}
     cellPosition: {x: 19, y: -3, z: 0}
-    nodeType: 1
+    nodeType: 4
     neighbors:
     - start: {x: 19.5, y: -2.5, z: 0}
       startCellPosition: {x: 19, y: -3, z: 0}
@@ -944,6 +990,12 @@ MonoBehaviour:
       endCellPosition: {x: 20, y: -3, z: 0}
       cost: 1
       linkType: 0
+    - start: {x: 19.5, y: -2.5, z: 0}
+      startCellPosition: {x: 19, y: -3, z: 0}
+      end: {x: 15.5, y: -2.5, z: 0}
+      endCellPosition: {x: 15, y: -3, z: 0}
+      cost: 4
+      linkType: 1
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -999,7 +1051,7 @@ MonoBehaviour:
       linkType: 0
   - worldPosition: {x: 22.5, y: -2.5, z: 0}
     cellPosition: {x: 22, y: -3, z: 0}
-    nodeType: 4
+    nodeType: 1
     neighbors:
     - start: {x: 22.5, y: -2.5, z: 0}
       startCellPosition: {x: 22, y: -3, z: 0}
@@ -1011,6 +1063,52 @@ MonoBehaviour:
       startCellPosition: {x: 22, y: -3, z: 0}
       end: {x: 23.5, y: -2.5, z: 0}
       endCellPosition: {x: 23, y: -3, z: 0}
+      cost: 1
+      linkType: 0
+    pathLink:
+      start: {x: 0, y: 0, z: 0}
+      startCellPosition: {x: 0, y: 0, z: 0}
+      end: {x: 0, y: 0, z: 0}
+      endCellPosition: {x: 0, y: 0, z: 0}
+      cost: 0
+      linkType: 0
+  - worldPosition: {x: 23.5, y: -2.5, z: 0}
+    cellPosition: {x: 23, y: -3, z: 0}
+    nodeType: 1
+    neighbors:
+    - start: {x: 23.5, y: -2.5, z: 0}
+      startCellPosition: {x: 23, y: -3, z: 0}
+      end: {x: 22.5, y: -2.5, z: 0}
+      endCellPosition: {x: 22, y: -3, z: 0}
+      cost: 1
+      linkType: 0
+    - start: {x: 23.5, y: -2.5, z: 0}
+      startCellPosition: {x: 23, y: -3, z: 0}
+      end: {x: 24.5, y: -2.5, z: 0}
+      endCellPosition: {x: 24, y: -3, z: 0}
+      cost: 1
+      linkType: 0
+    pathLink:
+      start: {x: 0, y: 0, z: 0}
+      startCellPosition: {x: 0, y: 0, z: 0}
+      end: {x: 0, y: 0, z: 0}
+      endCellPosition: {x: 0, y: 0, z: 0}
+      cost: 0
+      linkType: 0
+  - worldPosition: {x: 24.5, y: -2.5, z: 0}
+    cellPosition: {x: 24, y: -3, z: 0}
+    nodeType: 4
+    neighbors:
+    - start: {x: 24.5, y: -2.5, z: 0}
+      startCellPosition: {x: 24, y: -3, z: 0}
+      end: {x: 23.5, y: -2.5, z: 0}
+      endCellPosition: {x: 23, y: -3, z: 0}
+      cost: 1
+      linkType: 0
+    - start: {x: 24.5, y: -2.5, z: 0}
+      startCellPosition: {x: 24, y: -3, z: 0}
+      end: {x: 25.5, y: -2.5, z: 0}
+      endCellPosition: {x: 25, y: -3, z: 0}
       cost: 1
       linkType: 0
     pathLink:
@@ -1065,10 +1163,16 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
-  - worldPosition: {x: -2.5, y: 2.5, z: 0}
-    cellPosition: {x: -3, y: 2, z: 0}
+  - worldPosition: {x: -5.5, y: 2.5, z: 0}
+    cellPosition: {x: -6, y: 2, z: 0}
     nodeType: 3
-    neighbors: []
+    neighbors:
+    - start: {x: -5.5, y: 2.5, z: 0}
+      startCellPosition: {x: -6, y: 2, z: 0}
+      end: {x: -5.5, y: -2.5, z: 0}
+      endCellPosition: {x: -6, y: -3, z: 0}
+      cost: 5
+      linkType: 2
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -1076,16 +1180,27 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
-  - worldPosition: {x: 2.5, y: 2.5, z: 0}
-    cellPosition: {x: 2, y: 2, z: 0}
+  - worldPosition: {x: 0.5, y: 2.5, z: 0}
+    cellPosition: {x: 0, y: 2, z: 0}
     nodeType: 3
     neighbors:
-    - start: {x: 2.5, y: 2.5, z: 0}
-      startCellPosition: {x: 2, y: 2, z: 0}
-      end: {x: 2.5, y: -0.5, z: 0}
-      endCellPosition: {x: 2, y: -1, z: 0}
-      cost: 3
+    - start: {x: 0.5, y: 2.5, z: 0}
+      startCellPosition: {x: 0, y: 2, z: 0}
+      end: {x: 0.5, y: -2.5, z: 0}
+      endCellPosition: {x: 0, y: -3, z: 0}
+      cost: 5
       linkType: 2
+    pathLink:
+      start: {x: 0, y: 0, z: 0}
+      startCellPosition: {x: 0, y: 0, z: 0}
+      end: {x: 0, y: 0, z: 0}
+      endCellPosition: {x: 0, y: 0, z: 0}
+      cost: 0
+      linkType: 0
+  - worldPosition: {x: 0.5, y: 5.5, z: 0}
+    cellPosition: {x: 0, y: 5, z: 0}
+    nodeType: 3
+    neighbors: []
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -1110,34 +1225,6 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
-  - worldPosition: {x: 1.5, y: 5.5, z: 0}
-    cellPosition: {x: 1, y: 5, z: 0}
-    nodeType: 3
-    neighbors:
-    - start: {x: 1.5, y: 5.5, z: 0}
-      startCellPosition: {x: 1, y: 5, z: 0}
-      end: {x: 1.5, y: 2.5, z: 0}
-      endCellPosition: {x: 1, y: 2, z: 0}
-      cost: 3
-      linkType: 2
-    pathLink:
-      start: {x: 0, y: 0, z: 0}
-      startCellPosition: {x: 0, y: 0, z: 0}
-      end: {x: 0, y: 0, z: 0}
-      endCellPosition: {x: 0, y: 0, z: 0}
-      cost: 0
-      linkType: 0
-  - worldPosition: {x: 7.5, y: 5.5, z: 0}
-    cellPosition: {x: 7, y: 5, z: 0}
-    nodeType: 3
-    neighbors: []
-    pathLink:
-      start: {x: 0, y: 0, z: 0}
-      startCellPosition: {x: 0, y: 0, z: 0}
-      end: {x: 0, y: 0, z: 0}
-      endCellPosition: {x: 0, y: 0, z: 0}
-      cost: 0
-      linkType: 0
   - worldPosition: {x: 6.5, y: 1.5, z: 0}
     cellPosition: {x: 6, y: 1, z: 0}
     nodeType: 3
@@ -1155,10 +1242,33 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
+  - worldPosition: {x: 8.5, y: 5.5, z: 0}
+    cellPosition: {x: 8, y: 5, z: 0}
+    nodeType: 3
+    neighbors:
+    - start: {x: 8.5, y: 5.5, z: 0}
+      startCellPosition: {x: 8, y: 5, z: 0}
+      end: {x: 8.5, y: 1.5, z: 0}
+      endCellPosition: {x: 8, y: 1, z: 0}
+      cost: 4
+      linkType: 2
+    pathLink:
+      start: {x: 0, y: 0, z: 0}
+      startCellPosition: {x: 0, y: 0, z: 0}
+      end: {x: 0, y: 0, z: 0}
+      endCellPosition: {x: 0, y: 0, z: 0}
+      cost: 0
+      linkType: 0
   - worldPosition: {x: 12.5, y: 1.5, z: 0}
     cellPosition: {x: 12, y: 1, z: 0}
     nodeType: 3
-    neighbors: []
+    neighbors:
+    - start: {x: 12.5, y: 1.5, z: 0}
+      startCellPosition: {x: 12, y: 1, z: 0}
+      end: {x: 12.5, y: -2.5, z: 0}
+      endCellPosition: {x: 12, y: -3, z: 0}
+      cost: 4
+      linkType: 2
     pathLink:
       start: {x: 0, y: 0, z: 0}
       startCellPosition: {x: 0, y: 0, z: 0}
@@ -1177,8 +1287,8 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
-  - worldPosition: {x: 17.5, y: -2.5, z: 0}
-    cellPosition: {x: 17, y: -3, z: 0}
+  - worldPosition: {x: 18.5, y: -2.5, z: 0}
+    cellPosition: {x: 18, y: -3, z: 0}
     nodeType: 3
     neighbors: []
     pathLink:
@@ -1188,8 +1298,8 @@ MonoBehaviour:
       endCellPosition: {x: 0, y: 0, z: 0}
       cost: 0
       linkType: 0
-  - worldPosition: {x: 23.5, y: -2.5, z: 0}
-    cellPosition: {x: 23, y: -3, z: 0}
+  - worldPosition: {x: 25.5, y: -2.5, z: 0}
+    cellPosition: {x: 25, y: -3, z: 0}
     nodeType: 3
     neighbors: []
     pathLink:

@@ -8,7 +8,7 @@ namespace Code.Entities
     {
         public float FacingDirection { get; private set; } = 1f;
 
-        [SerializeField] private Animator animator;
+        [SerializeField] protected Animator animator;
         
         protected Entity _entity;
         
